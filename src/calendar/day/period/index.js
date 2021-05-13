@@ -57,7 +57,7 @@ export default class PeriodDay extends Component {
     if (marking.disabled) {
       defaultStyle.textStyle.color = this.style.disabledText.color;
     } else if (marking.selected) {
-      defaultStyle.textStyle.color = this.style.selectedText.color;
+      defaultStyle.textStyle = this.style.selectedText;
     }
 
     const resultStyle = ([marking]).reduce((prev, next) => {
